@@ -2,7 +2,7 @@
 > 사용자 설문 기반 추천 시스템 개발을 위한 데이터 전처리 및 데이터베이스 구축  
 
 ## Train Data
-<img src=https://github.com/YUYUJIN/GemmaRecAPI/blob/main/images/aihub.jpg></img>  
+<img src=https://github.com/YUYUJIN/GemmaRecAPI/blob/main/pictures/aihub.jpg></img>  
 link: https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=data&dataSetSn=71446  
 데이터로는 AIHub의 연도별 패션 선호도 파악 및 추천 데이터를 사용. 
 
@@ -18,11 +18,11 @@ link: https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&ai
  응답 유저를 채택한 특성 기준 총 768개의 그룹으로 분리하여 응답자 그룹핑 진행, 결과로 458 그룹이 생성됨(특성 기준으로 가능한 그룹이 768개, 최종적으로 데이터에서 존재하는 그룹은 458 그룹).
 
 ## Image
-<img src=https://github.com/YUYUJIN/GemmaRecAPI/blob/main/images/surveygroup.jpg></img>  
+<img src=https://github.com/YUYUJIN/GemmaRecAPI/blob/main/pictures/surveygroup.jpg></img>  
 <surbeygroup 테이블>  
-<img src=https://github.com/YUYUJIN/GemmaRecAPI/blob/main/images/usergroup.jpg></img>  
+<img src=https://github.com/YUYUJIN/GemmaRecAPI/blob/main/pictures/usergroup.jpg></img>  
 <usergroup 테이블>  
-<img src=https://github.com/YUYUJIN/GemmaRecAPI/blob/main/images/items.jpg></img>  
+<img src=https://github.com/YUYUJIN/GemmaRecAPI/blob/main/pictures/items.jpg></img>  
 <items 테이블>  
 
 ## Reference
