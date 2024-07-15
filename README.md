@@ -1,8 +1,9 @@
 # GemmaRecAPI
-> 선호도 기반 유저들의 설문작성 내용을 토대로 구축된 Database를 이용.
-> 사용자 데이터를 기반으로 custom 2-stage-model(LRURec 모델과 LLM 모델) 사용해 사용자 히스토리 기반 추천 아이템 제안 서비스를 제공하는 API.  
-> LRURec 모델을 통해 사용자 히스토리를 기반으로 후보군을 검색하고, 사용자 세부정보/히스토리/생성한 후보군으로 prompt를 작성하여 LLM 모델의 입력으로 사용하여 Verbalizer 레이어를 사용하여 추천 아이템 반환한다.  
-> PostgreSQL로 구성된 Database를 server 환경에 구축하고 활용한다.  
+> 선호도 기반 유저들의 설문작성 내용을 토대로 PostgreSQL로 구성된 Database를 server 환경에 구축하고 활용.
+> 사용자 데이터를 기반으로 Custom 2-stage-model(LRURec 모델과 LLM 모델) 사용해 사용자 히스토리 기반 추천 아이템 제안 서비스를 제공하는 API.  
+> LRURec 모델을 통해 사용자 히스토리를 기반으로 후보군을 검색하고, 사용자 세부정보/히스토리/생성한 후보군으로 prompt를 작성하여 LLM 모델의 입력으로 사용하여 Verbalizer 레이어를 사용하여 추천 아이템 반환.  
+> FastAPI 형태로 선호 기반 설문 내용을 Database 형태로 관리하고, 이를 활용해 한 번의 API 호출로 train 및 inference를 진행하는 것을 목표로 작성.
+> 구축된 Database를 기반으로 학습 데이터들을 최신화하며, 추가적인 user group, item 들이 추가 되어도 추천 가능한 LLM 기반 추천 시스템.
 
 <img src=https://img.shields.io/badge/python-3.10.0-green></img>
 <img src=https://img.shields.io/badge/transformer-4.42.3-yellow></img>
