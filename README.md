@@ -45,31 +45,30 @@ HFTOKEN={huggingface token}
 python app.py
 ```
 ## Structure
-<img src=https://github.com/YUYUJIN/GemmaRecAPI/blob/main/pictures/structure.jpg></img>  
+<img src=https://github.com/YUYUJIN/GemmaRecAPI/blob/main/pictures/structure.JPG></img>  
 프로젝트의 구조도는 위와 같다.  
   
  LlamaRec: Two-Stage Recommendation using Large Language Models for Ranking 논문에서 제공한 구조와 구현을 대부분 따르고, 이를 위해 설문 데이터를 논문에 사용된 데이터와 비슷한 구조를 가지게 변형하여 사용하였다.  
  제시된 논문에서처럼 배포된 사전학습 4bit 양자화 LLM 모델을 LoRA 기반으로 파인튜닝 진행하여 사용하였다. 사용한 모델은 Gemma-2B 모델이고, 파인튜닝 시에는 AWS의 g5.xlarge 인스턴스 환경에서 확보한 데이터 기준 6시간 정도 소요되었다.  
- 학습에 사용한 Prompt는 PALR: Personalization Aware LLMs for Recommendation 논문에서 제안하는 Prompt 양식을 참고하여 작성하였다. 후술할 LLM(Gemma-2B) 내용 참조.
- 
+ 학습에 사용한 Prompt는 PALR: Personalization Aware LLMs for Recommendation 논문에서 제안하는 Prompt 양식을 참고하여 작성하였다. 후술할 LLM(Gemma-2B) 내용 참조.  
 
 ## LRURec && LLM(Gemma-2B)
 LRURec 모델에 사용한 데이터 예시와 Test 데이터셋에 대한 모델의 성능평가.    
-<img src=https://github.com/YUYUJIN/GemmaRecAPI/blob/main/pictures/LRUdata.jpg></img>  
+<img src=https://github.com/YUYUJIN/GemmaRecAPI/blob/main/pictures/LRUdata.JPG></img>  
 <학습 데이터 예시>  
-<img src=https://github.com/YUYUJIN/GemmaRecAPI/blob/main/pictures/LRUresult.jpg></img>  
+<img src=https://github.com/YUYUJIN/GemmaRecAPI/blob/main/pictures/LRUresult.JPG></img>  
 <Test 데이터셋 기준 성능평가>
   
  LLM 모델 Fine-tuning, Inference 시 사용한 Prompt 및 Test 데이터셋에 대한 모델의 성능평가  
-<img src=https://github.com/YUYUJIN/GemmaRecAPI/blob/main/pictures/LLMprompt.jpg></img>  
+<img src=https://github.com/YUYUJIN/GemmaRecAPI/blob/main/pictures/LLMprompt.JPG></img>  
 <Prompt 예시>  
-<img src=https://github.com/YUYUJIN/GemmaRecAPI/blob/main/pictures/LLMresult.jpg></img>  
+<img src=https://github.com/YUYUJIN/GemmaRecAPI/blob/main/pictures/LLMresult.JPG></img>  
 <Test 데이터셋 기준 성능평가> 
 
 ## API Document
  프로젝트의 결과로 제공할 수 있는 API는 다음 명세와 같다.  
-<img src=https://github.com/YUYUJIN/GemmaRecAPI/blob/main/pictures/api1.jpg></img>  
-<img src=https://github.com/YUYUJIN/GemmaRecAPI/blob/main/pictures/api2.jpg></img>  
+<img src=https://github.com/YUYUJIN/GemmaRecAPI/blob/main/pictures/api1.JPG></img>  
+<img src=https://github.com/YUYUJIN/GemmaRecAPI/blob/main/pictures/api2.JPG></img>  
  API Document link: https://documenter.getpostman.com/view/15695216/2sA3kPp4Yi 
 
 ## Trouble Shooting
