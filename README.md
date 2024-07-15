@@ -45,7 +45,7 @@ HFTOKEN={huggingface token}
 python app.py
 ```
 ## Structure
-<img src=https://github.com/YUYUJIN/GemmaRecAPI/blob/main/pictures/structure.JPG></img>  
+<img src=https://github.com/YUYUJIN/GemmaRecAPI/blob/main/pictures/structure.png></img>  
 프로젝트의 구조도는 위와 같다.  
   
  LlamaRec: Two-Stage Recommendation using Large Language Models for Ranking 논문에서 제공한 구조와 구현을 대부분 따르고, 이를 위해 설문 데이터를 논문에 사용된 데이터와 비슷한 구조를 가지게 변형하여 사용하였다.  
